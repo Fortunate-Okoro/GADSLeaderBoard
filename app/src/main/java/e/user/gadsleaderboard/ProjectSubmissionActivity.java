@@ -1,10 +1,10 @@
 package e.user.gadsleaderboard;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.LayoutInflater;
@@ -48,9 +48,9 @@ public class ProjectSubmissionActivity extends AppCompatActivity {
             AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
             final AlertDialog alertDialog = alertBuilder.create();
             alertDialog.show();
-            alertDialog.getWindow().setLayout(550, 600);
+            alertDialog.getWindow().setLayout(480, 600);
             LayoutInflater inflater = this.getLayoutInflater();
-            View dialogView = inflater.inflate(R.layout.confirm_submission_dialog, null);
+            View dialogView = inflater.inflate(R.layout.confirm_submission_dialog,null);
             alertDialog.getWindow().setContentView(dialogView);
             Button confirmSubmissionBtn = dialogView.findViewById(R.id.confirmProjectSubmissionBtn);
             confirmSubmissionBtn.setOnClickListener(view -> {
@@ -76,7 +76,7 @@ public class ProjectSubmissionActivity extends AppCompatActivity {
                                     AlertDialog.Builder(ProjectSubmissionActivity.this);
                             AlertDialog alertDialog = alertBuilder.create();
                             alertDialog.show();
-                            alertDialog.getWindow().setLayout(550, 350);
+                            alertDialog.getWindow().setLayout(480, 350);
                             LayoutInflater inflater = ProjectSubmissionActivity.this.getLayoutInflater();
                             View dialogView = inflater.inflate(R.layout.success_dialog, null);
                             alertDialog.getWindow().setContentView(dialogView);
@@ -89,7 +89,7 @@ public class ProjectSubmissionActivity extends AppCompatActivity {
                         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(ProjectSubmissionActivity.this);
                         AlertDialog alertDialog = alertBuilder.create();
                         alertDialog.show();
-                        alertDialog.getWindow().setLayout(550, 350);
+                        alertDialog.getWindow().setLayout(480, 350);
                         LayoutInflater inflater = ProjectSubmissionActivity.this.getLayoutInflater();
                         View dialogView = inflater.inflate(R.layout.submission_fail_dialog, null);
                         alertDialog.getWindow().setContentView(dialogView);

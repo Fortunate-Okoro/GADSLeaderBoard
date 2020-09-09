@@ -13,7 +13,7 @@ public class SkillIqModel {
     @SerializedName("country")
     @Expose
     private String country;
-    @SerializedName("badge Url")
+    @SerializedName("badgeUrl")
     @Expose
     private String badgeUrl;
 
